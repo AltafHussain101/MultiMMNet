@@ -6,7 +6,7 @@ Multi-Model Material Network (MultiMMNet) is a structure-agnostic deep learning 
 
 ## 🔑 Key Highlights
 
-- **Structure-Agnostic Framework**: Predicts material properties using only compositional information—no crystal structures required.
+- **Structure-Agnostic Framework**: Predicts material properties using only compositional information no crystal structures required.
 - **Comprehensive Multi-Module Design**: Integrates Transformer, CNN, Pairwise Interaction, Cross Attention, and GLUAttnNetwork modules to capture complex inter-element dependencies.
 - **Fractional Encoding Module**: Enriches representations of element fractions, including ultra-low-concentration dopants.
 - **GLUA Attention Mechanism**: Gated Linear Unit with Attention enables refined feature weighting and improved generalization in property prediction.
