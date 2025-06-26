@@ -1,15 +1,15 @@
 # MultiMMNet: Multi Model Structure-Agnostic Framework for Enhanced Materials Discovery in Engineering Informatics
 
-MultiMMNet is a deep learning framework for predicting material properties using only compositional information. By combining a dual-encoder architecture (Transformer + CNN) with a gated attention mechanism and advanced fractional encoding, MultiMMNet enables accurate, interpretable, and structure-agnostic materials property prediction—making it especially useful for early-stage discovery and dopant-sensitive systems.
+Multi-Model Material Network (MultiMMNet) is a structure-agnostic deep learning framework designed to accurately predict material properties using only compositional information. The architecture integrates five key components: a Transformer to capture global contextual relationships, a Convolutional Neural Network (CNN) for local pattern extraction, a Pairwise Interaction module to model element-to-element relationships, a Cross Attention mechanism to align and fuse feature representations, and a Gated Linear Unit with Attention Network (GLUAN) for nonlinear feature modulation and interpretability. Together, these modules enable MultiMMNet to learn complex inter-element interactions and adaptively assign importance to elements within a composition. Evaluated on benchmark datasets, the model outperforms existing methods and sets new state-of-the-art performance in structure-agnostic materials property prediction.
 
 ---
 
 ## 🔑 Key Highlights
 
 - **Structure-Agnostic Framework**: Predicts material properties using only compositional information—no crystal structures required.
-- **Multi-Encoder Design**: Combines CNN and Transformer encoders to capture both local and global elemental interactions.
+- **Comprehensive Multi-Module Design**: Integrates Transformer, CNN, Pairwise Interaction, Cross Attention, and GLUAttnNetwork modules to capture complex inter-element dependencies.
 - **Fractional Encoding Module**: Enriches representations of element fractions, including ultra-low-concentration dopants.
-- **GLUA Attention Mechanism**: Enables interpretable and nonlinear feature learning.
+- **GLUA Attention Mechanism**: Gated Linear Unit with Attention enables refined feature weighting and improved generalization in property prediction.
 - **Interpretability**: Provides attention-based heatmaps and element-wise contribution analysis.
 - **Scalable and Modular**: Easily extensible to new property types and data sources.
 
@@ -17,10 +17,13 @@ MultiMMNet is a deep learning framework for predicting material properties using
 
 ## 🧪 Applications
 
-- **Early-stage materials discovery** in fields such as energy storage, semiconductors, and functional coatings.
-- **Property prediction** for materials without known crystal structures.
-- **Doped system analysis**, capturing complex inter-element dependencies at trace concentrations.
-- **Explainable AI** in materials science, enabling better understanding of learned elemental roles.
+MultiMMNet addresses critical challenges in materials science, with applications in:
+
+- **Accelerated discovery of novel materials** for energy storage, thermoelectrics, catalysis, and semiconductor applications.
+- **Advanced composition-driven property prediction** without the need for structural input, enabling efficient exploration of large chemical design spaces.
+- **Modeling dopant effects** at ultra-low concentrations (e.g., ppm-level), supporting precision design in electronic and functional materials.
+- **Computational guidance for experimental synthesis**, helping prioritize high-potential compositions for lab validation.
+- **Interpretability-driven design**, providing insights into element-wise contributions to material properties.
 
 ---
 
